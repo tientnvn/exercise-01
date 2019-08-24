@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bootstrap.js",
     "dev": "nodemon src/index.js",
-    "test": "mocha",
+    "test": "mocha --file src/test",
     "build": "babel src --out-dir dist"
   },
   "devDependencies": {
