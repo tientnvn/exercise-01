@@ -77,7 +77,7 @@ describe('Validate', () => {
 
 describe('Rotate', () => {
   describe('#Rotate', () => {
-    it('Should return false with not correct data metrix', (done) => {
+    it('Should not have Exception throw with correct data metrix', (done) => {
       try {
         rotate(testMetrix, 4)
         done()
@@ -88,7 +88,7 @@ describe('Rotate', () => {
   });
 
   describe('#Rotate', () => {
-    it('Should have Exception throw with not correct data metrix', (done) => {
+    it('Should have Exception throw with incorrect data metrix', (done) => {
       try {
         rotate(missingRow, 4)
         done(new Error("Should Have Exception Throw"))

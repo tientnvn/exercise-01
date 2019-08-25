@@ -14,8 +14,8 @@ const rotateRoute = validation(
     const { k, data, n } = req.body
     const rotateCount = k % 4
     let newMetrix = data
-    let i = rotateCount
-    for ( i = rotateCount; i > 0; i--) {
+    let index = rotateCount
+    for ( index = rotateCount; index > 0; index--) {
       newMetrix = rotate(newMetrix, n)
     }
     res.json({result: newMetrix})
