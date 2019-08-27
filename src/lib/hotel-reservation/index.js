@@ -22,7 +22,7 @@ const checkReservation = ({arrivals, departure, k}) => {
     let check = singleDayBookings.filter(booking => {
         return booking.reservation > k
     })
-    return {data: check, valid: check.length === 0}
+    return {invalidList: check, isValid: check.length === 0}
   } else {
     throw new Error("Reservation is invalid")
   }
