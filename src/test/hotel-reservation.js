@@ -53,7 +53,7 @@ describe('CheckReservation', () => {
   describe('#CheckReservation', () => {
     it('Should return false with missing-row metrix', () => {
       let result = checkReservation(valid2)
-      assert.equal(result.valid, true);
+      assert.equal(result.isValid, true);
     });
   });
 });
